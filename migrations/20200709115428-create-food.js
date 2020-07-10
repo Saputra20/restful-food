@@ -23,6 +23,12 @@ module.exports = {
       category: {
         type: Sequelize.STRING
       },
+      country: {
+        type: Sequelize.STRING
+      },
+      rating: {
+        type: Sequelize.INTEGER
+      },
       status: {
         type: Sequelize.INTEGER
       },
