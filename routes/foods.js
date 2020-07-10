@@ -4,7 +4,7 @@ var models = require('../models/index')
 
 /* GET users listing. */
 router.get('/traditional', function(req, res, next) {
-  models.Foods.findAll({
+  models.foods.findAll({
     where:{
       status : 1
     }
@@ -17,7 +17,7 @@ router.get('/traditional', function(req, res, next) {
 });
 
 router.get('/international', function(req, res, next) {
-  models.Foods.findAll({
+  models.foods.findAll({
     where:{
       status : 2
     }
@@ -30,7 +30,7 @@ router.get('/international', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
-  models.Foods.findAll({
+  models.foods.findAll({
     where:{
       id : req.params.id
     }
